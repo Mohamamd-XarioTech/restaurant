@@ -11,7 +11,7 @@ async def lifespan(app: FastAPI):
     yield
     # Shutdown (if needed)
 
-app = FastAPI(title="Xario Restaurant",
+app = FastAPI(root_path="/restaurant", title="Xario Restaurant",
               description="Restaurant Project.",
               version="0.0.1",
               contact={
